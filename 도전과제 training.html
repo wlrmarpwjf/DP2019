@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+     <haed>
+         <title>HTML 연습 페이지</title>
+         <meta charset="utf-8" />
+     </haed>
+     <body>
+         <!--????? 돌아오기 -->
+         <a href="html_part1.html">돌아오기</a>
+
+         <!-- h1~h6 제목, 순번x, 깊이(depth)o -->
+         <h1>대한민국</h1>
+         <h2>서울</h2>
+         <h3>영등포구</h3>
+         <h3>마포구</h3>
+         <h2>경기도</h2>
+         <h3>과천시</h3>
+         <h3>의왕시</h3>
+         <h2>전라도</h2>
+         <h2>강원도</h2>
+         <h1>미국</h1>
+         <h1>중국</h1>
+         <h1>일본</h1>
+
+         <!-- anchor 닻 특정지점으로 이동하는 기점 -->
+         <a href="http://www.google.com" target="_blank">구글가기</a>
+         <!-- _self, _blank -->
+         
+         <!-- 이미지 표시하는 태그 src="주소" -->
+         <img src="https://i.ytimg.com/vi/lUkrXEMMJSg/maxresdefault.jpg" />
+         <img src="cat.jpg" />
+
+         <p>
+             문단 : 한가지 주제 이어지는 서술내용
+         </p>
+         <p>
+             다른주제
+         </p>
+
+         <!-- 줄내림-->
+         <br />
+         하나 둘 셋 <br /> 넷 다섯
+
+         <!-- 의미가 크게 바뀔 떄 사용합니다. -->
+         <hr />
+
+         <!-- unodered list 비 순차적 목록-->
+         <ul>
+             <li>설탕 100g </li>
+             <li>소금 100g </li>
+             <li>물 100g </li>
+         </ul>
+
+         <!-- ordered list 순차적 목록 -->
+         <ol>
+             <li>물을 끓인다</li>
+             <li>라면을 넣는다</li>
+             <li>먹는다</li>
+             <li>설걷이를 하다</li>
+         </o1>
+
+         <!-- definition list 정의형 목록 -->
+         <dl>
+             <dt>unodered list 비 순차적 몰록</dt>
+             <dd>
+                 비 순차적 목록은 순서가 없고 위치가 바뀌어도
+                 의미가 바뀌지 않는 목록을 의미합니다.
+             </dd>
+
+             <dt>unodered list 비 순차적 몰록</dt>
+             <dd>
+                 정의형 목록은 어떤 용어나 단어등을 정의(의미를 명확히)할떄
+                 사용합니다.
+             </dd>
+         </dl>
+
+         <!-- strong, em <> b, i -->
+         <strong>강한 강조</strong>
+         <em>강조</em>
+
+         <b>볼드체</b>
+         <i>이텔릭체</i>
+
+         <!-- ins 첨부, del 삭제 <> u, strike -->
+         <ins>첨부내용</ins>
+         <del>삭제내용</del>
+
+         <u>밑줄</u>
+         <strike>가운데줄</strike>
+
+         <!-- sup 윗첨자, sub 아랫첨자 -->
+         2<sup>2</sup> : 2의 2제곱
+         H<sub>2</sub>0 : 물의 화학식
+
+         <img src="./images/momomo.jpg" width="100px" />
+         <img src="images/momomo.jpg" height="100px" />
+
+         <!-- table, tr, td -->
+         <style>
+             table, tr, td {border:solid 1px black; }
+         </style>
+         <!-- summary 요약, caption 표제-->
+         <table summary="표 설명">
+             <caption>[표] 표 제목</caption>
+             <!-- thead, tbody, tfoot -->
+             <!-- scope 초점, 망원경 -->
+            <thead>
+              <tr>
+                 <th scope="col">제목1</th>
+                 <th scope="col">제목2</th>
+                 <th scope="col">제목3</th>
+                 <th scope="col">제목4</th>
+                 <th scope="col">제목5</th>
+              </tr>
+            </thead>
+             <!-- tr 한줄, td 한칸 -->
+            <tbody>
+             <tr>
+                 <!-- colspan 가로(열)늘이기, rowspan 세로(행)늘이기 -->
+                 <td colspan="2">1</td>
+                 <td rowspan="2">2</td>
+                 <td>3</td>
+                 <td>4</td>
+             </tr>
+             <tr>
+                 <td>5</td>
+                 <td>6</td>
+                 <td>7</td>
+                 <td>8</td>
+             </tr>
+            </tbody>
+         </table>
+
+         <!-- div, span 분할 -->
+         <!-- 의미없이 쓰기 좋은 태그들 -->
+         <!-- 볼록형 -->
+         <div>내용</div>
+         <!-- 인라인형 -->
+         <span>내용</span>
+
+     </body>
+
+
+</html>
