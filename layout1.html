@@ -15,6 +15,9 @@
                             /* border: solid 1px black; */ /*경계선 긋기 */
                             /* margin: 10px; */ /*서로간에 여유공간 만들기 */
                         }
+                        header{
+                            padding: 10px 50px; /*상하 좌우*/
+                        }
                         header>ul>li{
                             float: left; /* 둥둥떠다니게 : 왼쪽기준 */
                             list-style: none; /* 목록-모습(동그라미):없음 */
@@ -56,6 +59,7 @@
                         }
                         nav{
                             background-color: #ddd;
+                            padding: 10px 50px;
                         }
                         #content>div:nth-child(1){
                             background-color: #98f;
@@ -64,7 +68,7 @@
                             background-color: #5d9;
                         }
                         #content>div:nth-child(3){
-                            background-color: #f76;
+                            background-color: #f79;
                         }
                         #content>div:nth-child(4){
                             background-color: #ec5;
@@ -88,6 +92,52 @@
                             margin-left: 200px; /*고정값 */
                             margin-left: auto; /*가변값 */
                             margin-right: auto; /*가변값 */
+
+                            padding: 50px 0px; /*상하 좌우 */
+                        }
+                        footer{
+                            background-color: #555;
+                            color: #ccc;
+
+                            padding: 10px 50px;
+                        }
+                        footer>div>ul>li{
+                            float: left;
+                            list-style: none;
+                            padding: 0px 10px; /*상하 좌우*/
+
+                            border-right: solid 2px gray;
+                        }
+                        footer>div>ul>li:nth-child(6){
+                            border: none;
+                        }
+                        footer>div>Ul{
+                            padding:10px
+                        }
+                        footer>ul>li{
+                            float: left;
+                            list-style: none;
+                            padding: 0px 10px; /*상하 좌우 */
+                        }
+                        footer>ul{
+                            padding: 0px;
+                        }
+                        #footer_left{
+                            float: left;
+                        }
+                        #footer_right{
+                            float: right;
+                        }
+                        #wrap{
+                            /* width: 1200px; */ /*고정값 */
+                            min-width: 1100px; /* 최소넓이 */
+                            max-width: 1920px; /* 최대넓이 */
+                            margin-left: auto;
+                            margin-right: auto;
+
+                        }
+                        body{
+                            margin: 0px;
                         }
                     </style>
                 </h1>
@@ -244,7 +294,34 @@
                     </section>
                 </div>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div id="footer_left">
+                    <ul>
+                       <li>Home</li>
+                       <li>About</li>
+                       <li>Services</li>
+                       <li>Work</li>
+                       <li>Blog</li>
+                       <li>Contact us</li>
+                       <div class="clear"></div> <!-- float left 해제 -->
+                    </ul>
+                    <div>ⓒ 2013 BlueBox. All Right Reserved. </div>
+                    <div>the loges in the design are the property 
+                     of their respective owners/copyright 
+                     holders.
+                    </div>
+                </div>
+                <ul id="footer_right"> <!--오른편 상자 역할 -->
+                    <li><img src="images/layout1_footer_icon1.png" /></li>
+                    <li><img src="images/layout1_footer_icon2.png" /></li>
+                    <li><img src="images/layout1_footer_icon3.png" /></li>
+                    <li><img src="images/layout1_footer_icon4.png" /></li>
+                    <li><img src="images/layout1_footer_icon5.png" /></li>
+                    <li><img src="images/layout1_footer_icon6.png" /></li>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </ul>
+                <div class="clear"></div> <!-- float left 해제 -->
+            </footer>
         </div>
     </body>
 </html>
